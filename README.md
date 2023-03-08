@@ -11,6 +11,8 @@ Maven
       www.mvnrepository.com
       
   arctype=arcitect Type.
+      it provides some default templets.
+      
   pom.xml   = project Object Model (kundali of Project)
   
 steps
@@ -25,3 +27,10 @@ steps
                 <artifactId>mysql-connector-j</artifactId>
                 <version>8.0.32</version>
             </dependency>
+
+                                                                                                      08/03/2023
+   Todays Topics Discussed...
+            
+            To select the database use following command.
+                      > use DataBase_Name;
+                 
