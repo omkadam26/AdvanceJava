@@ -3,3 +3,35 @@ filters in jsp
 filter implementation
 jsp servlet
 session
+crosscuting concerns
+      block perticular entry
+      
+      
+masterCard
+visa
+rupay is only indian
+not payment
+highest population in the world.
+along with filters jsp 
+
+jndi industrial constraints standard way
+java naming directory interface
+
+jsp taglib
+context.xml file present at server.
+jndi used to fetch the connection from the source program
+
+
+config prpoperties    --> in which database userid nd password is stored with the key,password pair.
+with extension of .properties 
+
+
+UAT
+Hire Environment
+
+productio
+
+
+DBPass
+
+spring mvc is mostly used in java
