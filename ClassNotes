@@ -1,0 +1,32 @@
+Why hashset doesnt allow duplicates and what is working behind it VIMP Interview Question
+
+hashset internally implements which class
+ChatGPT
+In Java, HashSet is implemented using a hash table data structure. Internally, HashSet uses a HashMap instance to store its elements. In other words, HashSet is essentially a wrapper around a HashMap.
+
+When you add an element to a HashSet, the element is added to the underlying HashMap with the element as the key and a dummy value as the value. Since HashMap does not allow duplicate keys, adding a duplicate element to a HashSet will simply replace the existing value associated with the key, which effectively discards the duplicate element.
+
+When you perform a lookup operation on a HashSet, such as calling the contains() method, HashSet checks if the element is present in the underlying HashMap. If the element is present, then the contains() method returns true. Otherwise, it returns false.
+
+In summary, HashSet internally implements a HashMap to store its elements. This allows HashSet to provide constant-time performance for add, remove, and lookup operations, as long as the hash function used by the HashMap has a good distribution.
+
+
+
+Q.  how map converted into hashset in java collection
+
+ChatGPT
+In Java, you can convert a Map into a HashSet by using the keySet() method of the Map interface. The keySet() method returns a Set view of the keys in the Map, which you can then use to create a new HashSet.
+
+Here's an example of how to convert a Map into a HashSet:
+
+java
+Copy code
+Map<String, Integer> map = new HashMap<>();
+map.put("A", 1);
+map.put("B", 2);
+map.put("C", 3);
+
+Set<String> set = new HashSet<>(map.keySet());
+In this example, we first create a Map object and add some key-value pairs to it. Then, we use the keySet() method to get a Set view of the keys in the Map, and we pass this Set to the HashSet constructor to create a new HashSet.
+
+Note that this conversion only includes the keys from the Map, not the values. If you want to include both keys and values in the HashSet, you can use the entrySet() method instead of keySet(). The entrySet() method returns a Set view of the key-value pairs in the Map as Map.Entry objects, which you can then add to a new HashSet.
