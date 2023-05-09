@@ -30,3 +30,10 @@ Set<String> set = new HashSet<>(map.keySet());
 In this example, we first create a Map object and add some key-value pairs to it. Then, we use the keySet() method to get a Set view of the keys in the Map, and we pass this Set to the HashSet constructor to create a new HashSet.
 
 Note that this conversion only includes the keys from the Map, not the values. If you want to include both keys and values in the HashSet, you can use the entrySet() method instead of keySet(). The entrySet() method returns a Set view of the key-value pairs in the Map as Map.Entry objects, which you can then add to a new HashSet.
+
+
+Q- what is difference in hashset and hashmap
+Q- what is difference between linkedlist and arraylist.
+Q- how hashmap internally works.
+Q- collection in java.
+Q- Learn about arraylist hashmap hashing hashset 
