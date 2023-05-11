@@ -39,3 +39,286 @@ Q- collection in java.
 Q- Learn about arraylist hashmap hashing hashset 
 
 Q- reader intity doest allow primitive Integer  0-> compare and CompareTo    Collection
+
+
+11/05/2023
+aspectJ
+
+AspectJ is a powerful aspect-oriented programming (AOP) extension for the Java programming language. AOP is a programming paradigm that allows developers to modularize cross-cutting concerns, such as logging, error handling, security, and transaction management, which often cut across multiple modules or components of an application.
+
+
+AspectJ provides additional language constructs and tools to implement AOP concepts in Java. It allows developers to define aspects, which encapsulate cross-cutting concerns, and apply them to the appropriate locations in the codebase. Aspects are written using AspectJ's syntax and can be woven into the existing codebase at compile-time or runtime.
+
+
+Some key features of AspectJ include:
+
+
+Pointcut Expressions: AspectJ introduces a powerful pointcut language that allows developers to specify where and when an aspect should be applied in the codebase. Pointcut expressions define the join points (specific locations in the code, like method invocations or field access) that an aspect should intercept.
+
+Advice: AspectJ provides different types of advice, such as "before," "after," "around," "after-returning," and "after-throwing." Advice represents the actual code that gets executed when a join point is intercepted by an aspect. For example, an "after" advice can be used to perform some action after a method completes execution.
+
+Introduction: AspectJ allows the introduction of new fields and methods to existing classes. This feature is useful for adding functionality to existing classes without modifying their source code directly. It enables the implementation of cross-cutting concerns without tightly coupling them to the original code.
+
+Inter-type declarations: With AspectJ, it is possible to declare additional members (fields, methods) on existing classes from an aspect. This capability allows aspects to modify the structure and behavior of classes without subclassing or modifying the original class.
+
+Compile-time weaving and runtime weaving: AspectJ supports both compile-time weaving and runtime weaving. In compile-time weaving, aspects are woven into the bytecode during the compilation process. Runtime weaving, on the other hand, performs weaving at runtime using a dedicated Weaver.
+
+
+AspectJ is widely used in enterprise Java applications to address cross-cutting concerns and improve the modularity and maintainability of the codebase. It integrates with popular Java development tools and frameworks, such as Eclipse and Spring, and provides comprehensive support for AOP concepts.
+
+spring prerequisit
+javaOOP
+object creation
+calling method from another class
+calling class from another package
+
+
+Top Java Features
+
+Top 5 New Features Java Programmers should learn in 2023
+Hello Java programmers, If you are wondering which new Java feature you should learn in 2023 then you have come to the right place. Earlier I have shared Java Developer RoadMap and essential Java Development framework and in this article, I am going to share the top 5 new Java features every Java developer should learn in 2023. This includes features like Record which can make creating value classes easier as well as Text Block, var, and many other features to improve your productivity. Java Programming language is changing rapidly. Now there is a new release every six months and it's hard to keep up-to-speed with new Java features. 
+
+So what should a Java programmer do to keep himself up-to-date and without missing key features? Well, instead of learning all-new feature you can focus on some of the key Java features which can make Java development easier and has the potential to improve code quality and developer productivity. 
+
+I haven't got a chance to learn most of the Java features since Java 10, so I decided to sit down and take note of the most important Java features and that's what I am going to share in this article. 
+
+In this article, you will learn about 5 new Java features since Java 9 release, this includes Java features like var from Java 10, Modules from Java 9, Sealed Classes from Java 15, Records from Java 14, Text Blocks from Java 15, and Switch Expression from Java 12. 
+
+These are the Java features that will not only help you to write better code but also be worth knowing from a Java interview point of view and that's why I think every Java developer should learn in 2023. 
+
+Before learning these Java features in detail, let's try to get a glimpse of what they are and how they help Java developers. Modules made your Java application smaller and faster by reducing unwanted packages. You are allowed to include what you really need. Then var comes which makes it easier to declare local variables like Javascript and other programming languages. 
+
+Switch expression made the branching easier and improve the readability aspect of code. You can now write expressions, combine multiple cases to produce a single result, and much more. You will see in the example how clear and concise new switch statements are. 
+
+Sames goes to Text Block which ended the pain of escaping string for multiple lines. Now, it's much easier to produce multiple line output from a Java program.
+
+Records of Java 14 is a game-changer, it allows you specific immutable data structure without any clutter. Now, you don't need to define equals(), hashCode(), toString(), and constructor for your Java classes, just declare them Record and Java will take care of it. This makes declaring Domain objects really easy. 
+
+Now, coming to Sealed classes as the name suggests they allow you to seal your class and interface so that only permitted classes can extend it or which interface can implement it. This is a nice feature for data modeling and improves the security of your libraries. 
+
+
+
+
+5 New Java Features Every Java Developer should learn in 2023
+Java is one of the most popular programming languages. It has maintained itself as one of the top languages since its inception in the 90s. Today, Java is used in several domains. It is used in developing web-based applications, mobile applications, desktop GUI applications, and more. 
+
+Java is a regularly updated programming language. New features are added regularly and outdated ones are removed, replaced, or updated. Java developers must keep up with the new changes.
+
+In this article, we will discuss the top 5 new Java features and two old but important Java features to learn, as shown below:
+
+Top 5 Java features to Learn in 2022
+
+
+1. Module
+Java module is a new feature added with Java 9. It is a mechanism, using which you can package a Java app or API as a Java module. It is available as a modular JAR file. A module can contain one or more packages.  
+
+This feature allowed the Java designer to split the big JDK into smaller modules which means now your application has a much lower memory footprint and you can run on devices with lower memory. 
+
+Before setting up a module, we need to put “module-info.java” at the root of the packages. This file is known as the module descriptor. It has all the information required to build or to be used in the module.
+
+Following is the syntax of creating a module.
+
+module newModule{ 
+  // functional code
+} 
+
+
+We have to use the “module” keyword to create a module.  If you want to learn more about Modules in Java, I suggest you check out The Complete Java Masterclass course from Udemy. 
+
+5 best Java feature to learn
+
+
+
+
+2. Record
+Record in Java is a special kind of class that has a concise syntax. It is used for defining immutable data-only classes. Moreover, the Java record class is useful for holding records returned from a remote service call and database query, records read from CSV files, and for similar other use cases.
+
+Following is the syntax of the Java record class.
+public record demo(int arg1, int arg2) { 
+   //functional code
+} 
+
+Record is a seriously useful feature, it's not just saves typing but also provides a robust mechanism to declare immutable data structure. I highly recommend you to use Record if your object just has a bunch of fields to manage the state. 
+
+
+
+
+3. var keyword
+Introduced in Java 10, the var keyword is one of the most useful new features of Java. Earlier in Java, while declaring a variable, we had to specify the data type of the variable. Such a variable can hold only those values that match the data type. But variables declared using the var keyword can hold the value of any data type. There is no need to specify the data type.
+
+class VarDemo { 
+
+public static void main (String[] args) throws java.lang.Exception { 
+
+ // int 
+ var x = 123; 
+
+ // double 
+ var y = 2.70; 
+
+ // string 
+ var z = 'abc'; 
+
+  } 
+} 
+
+
+In the above code, three variables - x, y, and z are declared using the var keyword. We can see there is no data type specified. If you want to learn more about var and other Java 10 and 11 features, I recommend you to check out this nice little course Java New Features (Java 12, Java 11, Java 10, Java9 & Java8) on Udemy 
+
+5 Essential Features Every Java Developer should learn
+
+
+
+
+4. Text block
+Text block is another useful new feature of Java. A multi-line string is a block of text, that spans across multiple lines. We have to use the line separator for this.
+
+In Java, "/n" is the line separator. Observe the below code.
+
+
+class TextBlockDemo { 
+
+ public static void main (String[] args) throws java.lang.Exception { 
+    String multiLine = "This is line 1.\nThis is line 2.\nThis is line 3."; 
+    System.out.println(multiLine); 
+  } 
+
+} 
+
+
+The output will be: 
+This is line 1. 
+This is line 2. 
+This is line 3. 
+If you want to learn more about Java 13 features, I recommend you to check out the What's New in Java 13 course on Pluralsight. 
+
+What's new between Java 9 to Java 15
+
+
+
+
+5. Sealed classes
+The sealed class feature will give us more control over inheritance in Java. In simple words, we can now define which classes can implement or extend a class or interface.
+
+Following is an example of a sealed class in Java.
+public abstract sealed class C permits A, B { 
+  // functional code
+} 
+
+The above class is sealed using the “sealed” keyword. Then, the “permits” keyword is used to permit those classes which can extend or implement it.
+
+Similarly, we can also seal an interface.
+public sealed interface I permits J, K { 
+   // functional code
+} 
+If you want to learn more about Sealed Classes, Records, and Text Block then I suggest you join the What's New in Java 15 course by Sander Mak on Pluralsight. It provides a nice summary and demo of these new Java features. 
+
+
+
+
+6.  var-args
+var-args is a popular and commonly used new feature of Java. It is the short form for variable arguments. 
+
+A varargs method is a method that takes a variable number of arguments. By this it means, the number of arguments of a particular method is not defined. It can have a single argument or multiple arguments. Earlier, there were two ways of handling a method with variable arguments - using the overloaded method and putting arguments in an array. But the var-args is a simple and efficient way of handling variable arguments.
+
+Following is the syntax of var-args:
+
+public static void demo(... x) { 
+  // functional code
+} 
+
+This way the function can have zero or multiple arguments. The "x" will be declared as an array of the int data type. Observe the following code.
+
+public class DemoClass { 
+
+  public static void demo(int ...x) { 
+    System.out.println("Number of arguments: " + x.length); 
+  } 
+
+  public static void main (String[] args) throws java.lang.Exception { 
+   demo(1,2,3); // multiple arguments 
+   demo(1); // one argument
+   demo(); // no argument 
+  } 
+ 
+} 
+
+
+In the above code, the "demo" function has variable arguments. First, it is invoked with three arguments, then with a single argument, and at last with no argument. If you want to learn more about essential Java features, I recommend you to join Java Programming for Complete Beginners course by Ranga Karnam on Udemy. One of my favorite instructors on Udemy when it comes to learning Java and Spring. 
+
+best course to learn Java for beginners
+
+
+
+
+7. Lambda expressions
+Lambda expression is a short way of writing methods. They are very similar to the methods. They take arguments and return values. But unlike methods, lambda expressions do not have names. Moreover, we cannot implement the lambda expression right inside the method body.
+
+Following is the syntax of lambda expressions in Java:
+
+(arg1, arg2) -> expression 
+
+Observe the following code:
+ 
+In the below code, the lambda expression is used with the forEach() function. to print all elements of lists. You can see it's much cleaner than tradition for loop which requires a couple of lines of code for simple tasks like this. 
+class LambdaExample { 
+
+  public static void main (String[] args) throws java.lang.Exception { 
+
+    ArrayList<Integer> list = new ArrayList<Integer>(); 
+     list.add(1); 
+     list.add(2); 
+     list.add(3); 
+     list.add(4); 
+     list.add(5); 
+
+     list.forEach( (x) -> { System.out.println(x); } ); 
+
+  } 
+
+} 
+
+The output will be: 
+1. 
+2. 
+3. 
+4.
+5.
+Lambda expression is really a must-know feature for any Java developer and if you want to learn Lambda expression in-depth, I highly recommend you to check out Java Lambda Expressions: Learn How To Use Lambda Expressions course on Udemy. 
+
+best course to learn lambda expression in Java
+
+
+That's all about 5 New Features every Java developer should learn in 2023. Java has several new features. New and updated features are added in Java regularly. In this article, we discussed some of the very useful new features. We discussed var-args, Records, var keyword, text block, and lambda expressions. We discussed how to use these features with examples.
+
+Other Java and Programming Articles you may like
+The 2023 Java Developer RoadMap
+Java 10 Released - 10 New Features You Should Know
+20 Spring MVC Interview Questions with Answers
+10 Books Java Developers Should Read in 2023
+5 Spring Framework Books for experienced Developers
+5 courses to become a Software Architect
+The 2023 Web Developer RoadMap
+10 Testing Tools and Libraries Java Developer Should Know
+Top 5 courses to learn Microservice with Spring Cloud
+Top 20 libraries Java developers should know
+The 2023 DevOps RoadMap - How to learn DevOps better
+Top 10 Frameworks Java Programmer should learn 
+5 Spring Boot Features Every Java Programmer Learn
+
+Thanks for reading this article so far. If you find these Java features useful and worth sharing then please share them with your colleagues and friends on Facebook, Twitter, and LinkedIn. If you have any questions or feedback then please drop a note. 
+
+P. S. - If you are new to the Java world and want to master core Java before learning these advanced frameworks then I suggest you check out these best courses to learn core Java to level up your skill and master fundamentals.
+
+
+
+
+
+
+
+
+
+
+
+
+
