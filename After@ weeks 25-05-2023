@@ -1,0 +1,34 @@
+schedular
+clrone job   by using spring we can implement
+
+Annotations 
+@schedular
+@configuration
+@enable
+            @component   (componentScan (FolderDirec.Strcuture))
+            
+   ||           ||               ||
+@controller     @service is     @repository
+    ||
+@restcontroller
+    
+    
+com.test
+com.test.con
+com.test.sun
+
+
+@webServlet
+  Components mapping with http servlets
+  
+    
+    
+    
+spring IOC
+
+@page annotations
+
+
+
+
+( * * * * * * ) seconds min month day month year
